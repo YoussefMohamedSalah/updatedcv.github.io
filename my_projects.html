@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Css stylesheet, font awesome cdn, Bootstrap cdn -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Well organized C.V Website that is easy to browse, Considering UI & UX With many examples of my previous work using : Html, Css, Javascript, Bootstrap and php">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="C.V, Html, Css, Bootstrap, Personal website, Portfolio">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- whatsapp function -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/venom-button.min.js"></script>
+    <!-- end of whatsapp function -->
+</head>
+<body class="night">
+    <!-- Scroll to Top Button-->
+    <a class="to_top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+        </svg>
+    </a>
+    <div class="menu">
+        <div class="menu-header">
+            <h2 class="menu-header-title">Theme</h2>
+            <div class="theme-switcher">
+            <input type="radio" id="light-theme" name="themes"  />
+            <label for="light-theme">
+                <span>
+                <i data-feather="sun"></i>Light
+                </span>
+            </label>
+            <input type="radio" id="dark-theme" name="themes" />
+            <label for="dark-theme">
+                <span>
+                <i data-feather="moon"></i>Dark
+                </span>
+            </label>
+            <input type="radio" id="black-theme" name="themes" checked/>
+            <label for="black-theme">
+                <span>
+                <i data-feather="star"></i>Black
+                </span>
+            </label>
+            <span class="slider"></span>
+            </div>
+        </div>
+        <!-- <div class="menu-body">
+            <a href="#"><i data-feather="circle" style="color: #198754;"></i>Green Color Theme</a>
+            <a href="#"><i data-feather="circle" style="color: cyan;"></i>Cyan Color Theme</a>
+            <a href="#"><i data-feather="circle" style="color: rgb(195, 255, 0);"></i>Lemon Color Theme</a>
+            <a href="#"><i data-feather="circle" style="color: rgb(255, 0, 0);"></i>Red Color Theme</a>
+            <a href="#"><i data-feather="info"></i>About</a>
+            <a href="#"><i data-feather="life-buoy"></i>Support</a>
+        </div> -->
+    </div>
+    <header>
+        <div class="container">
+            <a href="./index.html" class="logo">
+                <img src="./assets/download.png" height="30px" width="55px" alt="logo">
+                <span class="beta">Beta</span>
+            </a>
+            <nav>
+                <!-- here is the drop down menu for phones only -->
+                <!-- <i class="fas fa-bars toggle-menu"></i> -->
+                <div class="dropdown">
+                    <i class="fas fa-bars toggle-menu" onclick="myFunction()"></i>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="./index.html">Home</a>
+                        <a href="./about.html">About</a>
+                        <!-- <a href="./experience.html">Experience</a> -->
+                        <a href="./my_projects.html">RECENT WORK</a>
+                    </div>
+                </div>
+                <!-- end of the drop down menu only for phones -->                <ul>
+                    <!-- <li><a><button id="switch">switch</button></a></li> -->
+                    <li><a class="active" href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <!-- <li><a href="./experience.html">EXPERIENCE</a></li> -->
+                    <li><a href="./my_projects.html">RECENTWORK</a></li>
+                </ul>
+                <span class="switch">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                    </div>
+                </span>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="recent-work text-center container" >
+            <h1>Recent Works</h1>
+            <div class="feature-projects text-left">
+                <div class="h4text">
+                    <h4>Feature Projects</h4>
+                </div>
+                <div>
+                    <div class="featuredporjects">
+                        <div class="MuiGrid text-center">
+                            <div class="MaiGrid-item">
+                                <a href="./courses_academy.html">
+                                    <div class="card-wrap">
+                                        <div class="card">
+                                            <div class="exclusive">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="MuiChip-icon MuiChip-iconSmall MuiChip-iconColorSecondary" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M834.1 469.2A347.49 347.49 0 0 0 751.2 354l-29.1-26.7a8.09 8.09 0 0 0-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 0 1-47.5 46.1 352.6 352.6 0 0 0-100.3 121.5A347.75 347.75 0 0 0 160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0 0 75.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 0 0 760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0 0 27.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0 0 58.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0 0 12.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0 0 24.4 59.8 73.36 73.36 0 0 0 53.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path>
+                                                </svg>
+                                                <span class="MuiChip-label MuiChip-labelSmall">Featured</span>
+                                            </div>
+                                            <div class="card-bg">
+                                                <img src="./assets/leapAcademy.webp" alt="porject-img">
+                                            </div>
+                                            <div class="card-info">
+                                                <h3>Courses Academy</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="MuiGrid text-center">
+                            <div class="MaiGrid-item">
+                                <a href="./landingpage.html">
+                                    <div class="card-wrap">
+                                        <div class="card">
+                                            <div class="exclusive">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="MuiChip-icon MuiChip-iconSmall MuiChip-iconColorSecondary" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M834.1 469.2A347.49 347.49 0 0 0 751.2 354l-29.1-26.7a8.09 8.09 0 0 0-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 0 1-47.5 46.1 352.6 352.6 0 0 0-100.3 121.5A347.75 347.75 0 0 0 160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0 0 75.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 0 0 760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0 0 27.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0 0 58.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0 0 12.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0 0 24.4 59.8 73.36 73.36 0 0 0 53.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path>
+                                                </svg>
+                                                <span class="MuiChip-label MuiChip-labelSmall">Featured</span>
+                                            </div>
+                                            <div class="card-bg">
+                                                <img src="./assets/landing-sub.webp" alt="porject-img">
+                                            </div>
+                                            <div class="card-info">
+                                                <h3>Landing Page</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <div class="MuiGrid text-center">
+                            <div class="MaiGrid-item">
+                                <a href="#">
+                                    <div class="card-wrap">
+                                        <div class="card">
+                                            <div class="exclusive">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="MuiChip-icon MuiChip-iconSmall MuiChip-iconColorSecondary" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M834.1 469.2A347.49 347.49 0 0 0 751.2 354l-29.1-26.7a8.09 8.09 0 0 0-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 0 1-47.5 46.1 352.6 352.6 0 0 0-100.3 121.5A347.75 347.75 0 0 0 160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0 0 75.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 0 0 760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0 0 27.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0 0 58.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0 0 12.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0 0 24.4 59.8 73.36 73.36 0 0 0 53.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path>
+                                                </svg>
+                                                <span class="MuiChip-label MuiChip-labelSmall">Featured</span>
+                                            </div>
+                                            <div class="card-bg">
+                                                <img src="./assets/upcomming2.png" alt="porject-img">
+                                            </div>
+                                            <div class="card-info">
+                                                <h3 class="title">non</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div> -->
+                        <!-- <div class="MuiGrid text-center">
+                            <div class="MaiGrid-item">
+                                <a href="#">
+                                    <div class="card-wrap">
+                                        <div class="card">
+                                            <div class="exclusive">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="MuiChip-icon MuiChip-iconSmall MuiChip-iconColorSecondary" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M834.1 469.2A347.49 347.49 0 0 0 751.2 354l-29.1-26.7a8.09 8.09 0 0 0-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 0 1-47.5 46.1 352.6 352.6 0 0 0-100.3 121.5A347.75 347.75 0 0 0 160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0 0 75.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 0 0 760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0 0 27.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0 0 58.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0 0 12.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0 0 24.4 59.8 73.36 73.36 0 0 0 53.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path>
+                                                </svg>
+                                                <span class="MuiChip-label MuiChip-labelSmall">Featured</span>
+                                            </div>
+                                            <div class="card-bg">
+                                                <img src="./assets/upcomming2.png" alt="porject-img">
+                                            </div>
+                                            <div class="card-info">
+                                                <h3>Non</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div> -->
+                        <!-- <div class="MuiGrid text-center">
+                            <div class="MaiGrid-item">
+                                <a href="#">
+                                    <div class="card-wrap">
+                                        <div class="card">
+                                            <div class="exclusive">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="MuiChip-icon MuiChip-iconSmall MuiChip-iconColorSecondary" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M834.1 469.2A347.49 347.49 0 0 0 751.2 354l-29.1-26.7a8.09 8.09 0 0 0-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 0 1-47.5 46.1 352.6 352.6 0 0 0-100.3 121.5A347.75 347.75 0 0 0 160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0 0 75.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 0 0 760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0 0 27.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0 0 58.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0 0 12.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0 0 24.4 59.8 73.36 73.36 0 0 0 53.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path>
+                                                </svg>
+                                                <span class="MuiChip-label MuiChip-labelSmall">Featured</span>
+                                            </div>
+                                            <div class="card-bg">
+                                                <img src="./assets/two.webp" alt="porject-img">
+                                            </div>
+                                            <div class="card-info">
+                                                <h3>Youssef Gallery</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div> -->
+                        <div class="MuiGrid text-center">
+                            <div class="MaiGrid-item">
+                                <a href="#">
+                                    <div class="card-wrap">
+                                        <div class="card">
+                                            <div class="exclusive">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="MuiChip-icon MuiChip-iconSmall MuiChip-iconColorSecondary" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M834.1 469.2A347.49 347.49 0 0 0 751.2 354l-29.1-26.7a8.09 8.09 0 0 0-13 3.3l-13 37.3c-8.1 23.4-23 47.3-44.1 70.8-1.4 1.5-3 1.9-4.1 2-1.1.1-2.8-.1-4.3-1.5-1.4-1.2-2.1-3-2-4.8 3.7-60.2-14.3-128.1-53.7-202C555.3 171 510 123.1 453.4 89.7l-41.3-24.3c-5.4-3.2-12.3 1-12 7.3l2.2 48c1.5 32.8-2.3 61.8-11.3 85.9-11 29.5-26.8 56.9-47 81.5a295.64 295.64 0 0 1-47.5 46.1 352.6 352.6 0 0 0-100.3 121.5A347.75 347.75 0 0 0 160 610c0 47.2 9.3 92.9 27.7 136a349.4 349.4 0 0 0 75.5 110.9c32.4 32 70 57.2 111.9 74.7C418.5 949.8 464.5 959 512 959s93.5-9.2 136.9-27.3A348.6 348.6 0 0 0 760.8 857c32.4-32 57.8-69.4 75.5-110.9a344.2 344.2 0 0 0 27.7-136c0-48.8-10-96.2-29.9-140.9zM713 808.5c-53.7 53.2-125 82.4-201 82.4s-147.3-29.2-201-82.4c-53.5-53.1-83-123.5-83-198.4 0-43.5 9.8-85.2 29.1-124 18.8-37.9 46.8-71.8 80.8-97.9a349.6 349.6 0 0 0 58.6-56.8c25-30.5 44.6-64.5 58.2-101a240 240 0 0 0 12.1-46.5c24.1 22.2 44.3 49 61.2 80.4 33.4 62.6 48.8 118.3 45.8 165.7a74.01 74.01 0 0 0 24.4 59.8 73.36 73.36 0 0 0 53.4 18.8c19.7-1 37.8-9.7 51-24.4 13.3-14.9 24.8-30.1 34.4-45.6 14 17.9 25.7 37.4 35 58.4 15.9 35.8 24 73.9 24 113.1 0 74.9-29.5 145.4-83 198.4z"></path>
+                                                </svg>
+                                                <span class="MuiChip-label MuiChip-labelSmall">Featured</span>
+                                            </div>
+                                            <div class="card-bg">
+                                                <img src="./assets/upcomming2.webp" alt="porject-img">
+                                            </div>
+                                            <div class="card-info">
+                                                <h3>Comming up</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------- new section  ------------------------------------>
+                <div class="recent-work-container">
+                    <div class="h4text">
+                        <h4>Other Projects</h4>
+                    </div>
+                    <div>
+                        <div class="featuredporjects" >
+                            <div class="MuiGrid text-center">
+                                <div class="MaiGrid-item">
+                                    <a href="./log_interface.html">
+                                        <div class="card-wrap">
+                                            <div class="card">
+                                                <div class="card-bg">
+                                                    <img src="./assets/log-interface.webp" alt="porject-img">
+                                                </div>
+                                                <div class="card-info">
+                                                    <h3>log Template</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="MuiGrid text-center">
+                                <div class="MaiGrid-item">
+                                    <a href="./old_cv.html">
+                                        <div class="card-wrap">
+                                            <div class="card">
+                                                <div class="card-bg">
+                                                    <img src="./assets/cv.2.webp" alt="porject-img">
+                                                </div>
+                                                <div class="card-info">
+                                                    <h3>old c.v Template</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="MuiGrid text-center">
+                                <div class="MaiGrid-item">
+                                    <a href="./udacity.html">
+                                        <div class="card-wrap">
+                                            <div class="card">
+                                                <div class="card-bg">
+                                                    <img src="./assets/udacity-long.webp" alt="porject-img">
+                                                </div>
+                                                <div class="card-info">
+                                                    <h3>Udacity Projects</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div>
+                </div>
+            </div>
+        </div>
+                        <!-- whatsapp div -->
+                <div id="myButton">
+                    <script type="text/javascript">
+
+                        $('#myButton').venomButton({
+                            phone: '+201069963165',
+                            popupMessage: 'Hello, how can I help you?',
+                            message: "I'd like to work with you!",
+                            showPopup: true,
+                            position: "right",
+                            linkButton: false,
+                            showOnIE: false,
+                            headerTitle: 'Welcome!',
+                            headerColor: '#25d366',
+                            backgroundColor: '#25d366',
+                            buttonImage: '<img src="./assets/whatsapp.svg" alt="whatsapp logo" width="700px" />'
+                        });
+
+                    </script>
+                    <script type="text/javascript">
+
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-36251023-1']);
+                    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+                    _gaq.push(['_trackPageview']);
+
+                    (function() {
+                        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                    })();
+
+                    </script>
+                    <script>
+                    try {
+                    fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+                        return true;
+                    }).catch(function(e) {
+                        var carbonScript = document.createElement("script");
+                        carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+                        carbonScript.id = "_carbonads_js";
+                        document.getElementById("carbon-block").appendChild(carbonScript);
+                    });
+                    } catch (error) {
+                    console.log(error);
+                    }
+                    </script>
+                </div>
+                <!-- whatsapp function js -->
+    </section>
+    <script src="./js/javascript.js"></script>
+</body>
+</html>

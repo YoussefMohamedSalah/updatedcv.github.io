@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Css stylesheet, font awesome cdn, Bootstrap cdn -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Well organized C.V Website that is easy to browse, Considering UI & UX With many examples of my previous work using : Html, Css, Javascript, Bootstrap and php">
+    <meta name="keywords" content="C.V, Html, Css, Bootstrap, Personal website, Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- whatsapp function -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/venom-button.min.js"></script>
+    <!-- end of whatsapp function -->
+</head>
+<body class="night">
+    <!-- Scroll to Top Button-->
+    <a class="to_top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+        </svg>
+    </a>
+    <div class="menu">
+        <div class="menu-header">
+            <h2 class="menu-header-title">Theme</h2>
+            <div class="theme-switcher">
+            <input type="radio" id="light-theme" name="themes"  />
+            <label for="light-theme">
+                <span>
+                <i data-feather="sun"></i>Light
+                </span>
+            </label>
+            <input type="radio" id="dark-theme" name="themes" />
+            <label for="dark-theme">
+                <span>
+                <i data-feather="moon"></i>Dark
+                </span>
+            </label>
+            <input type="radio" id="black-theme" name="themes" checked/>
+            <label for="black-theme">
+                <span>
+                <i data-feather="star"></i>Black
+                </span>
+            </label>
+            <span class="slider"></span>
+            </div>
+        </div>
+        <!-- <div class="menu-body">
+            <a href="#"><i data-feather="circle" style="color: #198754;"></i>Green Color Theme</a>
+            <a href="#"><i data-feather="circle" style="color: cyan;"></i>Cyan Color Theme</a>
+            <a href="#"><i data-feather="circle" style="color: rgb(195, 255, 0);"></i>Lemon Color Theme</a>
+            <a href="#"><i data-feather="circle" style="color: rgb(255, 0, 0);"></i>Red Color Theme</a>
+            <a href="#"><i data-feather="info"></i>About</a>
+            <a href="#"><i data-feather="life-buoy"></i>Support</a>
+        </div> -->
+    </div>
+    <!-- end of the colors nav -->
+    <header>
+        <div class="container">
+            <a href="./index.html" class="logo">
+                <img src="./assets/download.png" height="30px" width="55px" alt="logo">
+                <span class="beta">Beta</span>
+            </a>
+            <nav>
+                <!-- here is the drop down menu for phones only -->
+                <!-- <i class="fas fa-bars toggle-menu"></i> -->
+                <div class="dropdown">
+                    <i class="fas fa-bars toggle-menu" onclick="myFunction()"></i>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="./index.html">Home</a>
+                        <a href="./about.html">About</a>
+                        <!-- <a href="./experience.html">Experience</a> -->
+                        <a href="./my_projects.html">RECENT WORK</a>
+                    </div>
+                </div>
+                <!-- end of the drop down menu only for phones -->
+                <ul>
+                    <!-- <li><a><button id="switch">switch</button></a></li> -->
+                    <li><a class="active" href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <!-- <li><a href="./experience.html">EXPERIENCE</a></li> -->
+                    <li><a href="./my_projects.html">RECENTWORK</a></li>
+                </ul>
+                <span class="switch">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                    </div>
+                </span>
+            </nav>
+        </div>
+    </header>
+    <!-- Scroll to Top Button-->
+    <a class="to_top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+        </svg>
+    </a>
+    <div class="menu">
+        <div class="menu-header">
+            <h2 class="menu-header-title">Theme</h2>
+            <div class="theme-switcher">
+            <input type="radio" id="light-theme" name="themes"  />
+            <label for="light-theme">
+                <span>
+                <i data-feather="sun"></i>Light
+                </span>
+            </label>
+            <input type="radio" id="dark-theme" name="themes" />
+            <label for="dark-theme">
+                <span>
+                <i data-feather="moon"></i>Dark
+                </span>
+            </label>
+            <input type="radio" id="black-theme" name="themes" checked/>
+            <label for="black-theme">
+                <span>
+                <i data-feather="star"></i>Black
+                </span>
+            </label>
+            <span class="slider"></span>
+            </div>
+        </div>
+        <!-- <div class="menu-body">
+            <a href="#"><i data-feather="circle" style="color: #198754;"></i>Green Color Theme</a>
+            <a href="#"><i data-feather="circle" style="color: cyan;"></i>Cyan Color Theme</a>
+            <a href="#"><i data-feather="circle" style="color: rgb(195, 255, 0);"></i>Lemon Color Theme</a>
+            <a href="#"><i data-feather="circle" style="color: rgb(255, 0, 0);"></i>Red Color Theme</a>
+            <a href="#"><i data-feather="info"></i>About</a>
+            <a href="#"><i data-feather="life-buoy"></i>Support</a>
+        </div> -->
+    </div>
+    <section class="personalInfo container">
+        <div class="myinfo">
+            <div>
+                <div class="aboutMe">
+                    <div>
+                        <div class="summaryTxtHeader">
+                            <h1>About Me</h1>
+                            <h3>Summary Information</h3>
+                        </div>
+                        <div>
+                            <p class="aboutMeTxt">
+                                I'm a jouner Front-End Developer with 6+ month of experience and Extensive Experience in Design,
+                                Development, I'm Developing more applications using different 
+                                technologies such as HTML5, Css, Bootstrap, Javascript, React.js.<br>Template Enthusiastic and self-
+                                taught, willing to learn and develop in the best possible way in new technologies, always
+                                responsible and committed to my duty.
+                            </p>
+                            <ul class="summaryInfoList">
+                                <li>
+                                    <span><i class="far fa-dot-circle"></i></span>
+                                    <p>5+ month of experience in Front-end development using HTML5, CSS3, and Javascript</p>
+                                </li>
+                                <li>
+                                    <span><i class="far fa-dot-circle"></i></span>
+                                    <p>Experienced with version control technologies, GIT</p>
+                                </li>
+                                <li>
+                                    <span><i class="far fa-dot-circle"></i></span>
+                                    <p>Experience with CSS pre-processors, SASS</p>
+                                </li>
+                                <li>
+                                    <span><i class="far fa-dot-circle"></i></span>
+                                    <p>Experience in React.js</p>
+                                </li>
+                                <li>
+                                    <span><i class="far fa-dot-circle"></i></span>
+                                    <p> Little Experience in Node.js, Express, MongoDB</p>
+                                </li>
+                                <li>
+                                    <span><i class="far fa-dot-circle"></i></span>
+                                    <p>Great Eye for design UI/UX and this portfolio Designed and developed by me</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                </div>
+            </div>
+            <div class="profilePic">
+                <div class="PortfolioPicSubContainer">
+                    <div class="summaryImg">
+                        <img src="./assets/me.webp" class="align-right slide-in" width="100%" alt="youssef mohamed">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- ---------------------------------------------------------------------------------- -->
+        <div>
+            <div class="myinfo2">
+                <!-- div num 1 -->
+                <div class="progressSkills">
+                    <div>
+                        <div>
+                            <h1>My Skills</h1>
+                        </div>
+                        <p>Every day i learn, I put new skills here</p>
+                        <div class="soft-skills-container">
+                            <div class="soft-skills">
+                                <div class="soft-skills-card">
+                                    <span>HTML5</span>
+                                    <img src="https://images.ctfassets.net/y7d50sg6fa73/37cwu9yUXzY0QZEtqAwwiK/709dfd625d90119d6eac999928d3cf57/html.svg" alt="html5 logo">
+                                </div>
+                                <div class="soft-skills-card">
+                                    <span>CSS3</span>
+                                    <img src="https://images.ctfassets.net/y7d50sg6fa73/5PE9TXE23i82E6hQD9cTON/96c6b6f738a575690a7bee0716e5cf4e/css3.svg" alt="css3 logo">
+                                </div>
+                                <div class="soft-skills-card">
+                                    <span>CSS Preprocessors</span>
+                                    <img src="https://images.ctfassets.net/y7d50sg6fa73/5cOiUq5VyT1P8HmMomb7We/9f4dd83db6d3baf6c78a9e95e172a492/sass.svg" alt="cass logo">
+                                </div>
+                                <div class="soft-skills-card">
+                                    <span>JavaScript / ES6</span>
+                                    <img src="https://images.ctfassets.net/y7d50sg6fa73/3AwhQdyDfhX1CVNcBpjs7l/2eac7f08ebb43ed766addc3c86df5254/js.svg" alt="javascript logo">
+                                </div>
+                                <div class="soft-skills-card">
+                                    <span>React.js</span>
+                                    <img src="https://images.ctfassets.net/y7d50sg6fa73/4DwWc5yPC1tIERy3cStvpI/613a3bb214e6e8ad92f773fb19e4297f/reactjs.svg" alt="react logo">
+                                </div>
+                                <div class="soft-skills-card">
+                                    <span>GIT</span>
+                                    <img src="https://images.ctfassets.net/y7d50sg6fa73/5oRdXYAXHib1uEa1PPpgXJ/1c9688e623dbfbfc7bb69b48937d8584/git.svg" alt="githup logo">
+                                </div>
+                                <div class="soft-skills-card">
+                                    <span>UI Design</span>
+                                    <img src="https://images.ctfassets.net/y7d50sg6fa73/7vKhk0YQmcCwXfDZHCHfvH/92b5c4a2ce800594e5a1169d91956e60/ui.svg" alt="ui logo">
+                                </div>
+                        </div>
+                        <div class="personal-skills">
+                            <h1>Personal Skills</h1>
+                            <ul>
+                                <li><span><i class="far fa-dot-circle"></i></span> Fast learner</li>
+                                <li><span><i class="far fa-dot-circle"></i></span> Problem solver</li>
+                                <li><span><i class="far fa-dot-circle"></i></span> Keen and interested in technologies and innovation</li>
+                                <li><span><i class="far fa-dot-circle"></i></span> Attention to details</li>
+                                <li><span><i class="far fa-dot-circle"></i></span> Analytical thinking</li>
+                                <li><span><i class="far fa-dot-circle"></i></span> Work in Team With sharing knowledge</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- div 2 -->
+                <div class="infoGrid">
+                    <div class="info">
+                        <div>
+                            <h1>Personal Data</h1>
+                        </div>
+                        <div class="contaPersonal">
+                            <h5>Full Name : </h5>
+                            <h6>Youssef Mohamed Salah Mohamed</h6>
+                            <h5>Martital Status : </h5>
+                            <h6>Single</h6>
+                            <h5>Date of Birth : </h5>
+                            <h6>01/04/1996</h6>
+                            <h5>Military Status : </h5>
+                            <h6>Exempted</h6>
+                            <h5>Address : </h5>
+                            <h6>Nasr-City, Cairo, Egypt</h6>
+                            <h5>Education : </h5>
+                            <h6>Petroleum Engineer</h6>
+                            <h6>North-Caucasus-Federal-University,Russia</h6>
+                            <h6>2017-2023(6years)</h6>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+                <!-- whatsapp div -->
+                <div id="myButton">
+                    <script type="text/javascript">
+                        $('#myButton').venomButton({
+                            phone: '+201069963165',
+                            popupMessage: 'Hello, how can I help you?',
+                            message: "I'd like to work with you!",
+                            showPopup: true,
+                            position: "right",
+                            linkButton: false,
+                            showOnIE: false,
+                            headerTitle: 'Welcome!',
+                            headerColor: '#25d366',
+                            backgroundColor: '#25d366',
+                            buttonImage: '<img src="./assets/whatsapp.svg" alt="whatsapp logo" width="700px" />'
+                        });
+                    </script>
+
+                    <script type="text/javascript">
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-36251023-1']);
+                    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+                    _gaq.push(['_trackPageview']);
+
+                    (function() {
+                        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                    })();
+                    </script>
+                    
+                    <script>
+                    try {
+                    fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+                        return true;
+                    }).catch(function(e) {
+                        var carbonScript = document.createElement("script");
+                        carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+                        carbonScript.id = "_carbonads_js";
+                        document.getElementById("carbon-block").appendChild(carbonScript);
+                    });
+                    } catch (error) {
+                    console.log(error);
+                    }
+                    </script>
+                </div>
+                <!-- whatsapp function js -->
+            </div>
+        </div>
+    </section>
+    <script src="./js/javascript.js"></script>
+</body>
+</html>
